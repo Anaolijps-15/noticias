@@ -71,6 +71,10 @@ header .mobile a {
     margin-bottom: 5.5rem;
 }
 
+header .desktop {
+    display: none;
+}
+
 main {
     max-width: 1110px;
     margin-inline: auto;
@@ -188,6 +192,10 @@ main {
     margin-block: 0.6rem;
 }
 
+.terceira-seçao a {
+    text-decoration: none;
+}
+
 .terceira-seçao p {
     font-size: 0.9375rem;
     line-height: 1.25rem;
@@ -195,6 +203,24 @@ main {
 }
 
 @media(min-width: 1100px) {
+
+    header .desktop {
+        display: flex;
+        gap: 2.5rem;
+
+    }
+
+    header .desktop a{
+        font-size:0.9375rem ;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--Gunmetal);
+    }
+
+    header .desktop a:houver{
+        color: var(--Vermillion);
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -226,22 +252,22 @@ main {
         font-size:3.5rem ;
     }
 
+    .primeira-seçao button{
+        background-color: var(--Dark-blue);
+        cursor: pointer;
+    }
+
 
     header > button{
         display: none;
     }
 
-    header .desktop {
+    .terceira-seçao {
         display: flex;
-        gap: 2.5rem;
-
+        grid-column: 1/4;
     }
 
-    header .desktop a{
-        font-size:0.9375rem ;
-        line-height: 1.625rem;
-        text-decoration: none;
-        color: var(--Gunmetal);
-
+    .terceira-seçao h2:hover{
+        color: var(--Vermillion);
     }
 }
