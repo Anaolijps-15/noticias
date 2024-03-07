@@ -29,14 +29,23 @@ body.menu-open::before {
     left: 0;
 }
 
-.header-mobile {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+
+    max-width: 1110px;
+    margin-inline: auto;
 }
 
-.header-mobile nav {
+header button {
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+header nav.mobile{
     position: fixed;
     background-color: var(--almost-withw);
     right: -16rem;
@@ -53,13 +62,18 @@ body.menu-open::before {
     transition: 0.7s;
 }
 
-.header-mobile nav.abrir {
+header nav.mobile.abrir {
     right: 0rem;
 }
 
-.header-mobile nav button {
+header .mobile a {
     align-self: flex-end;
     margin-bottom: 5.5rem;
+}
+
+main {
+    max-width: 1110px;
+    margin-inline: auto;
 }
 
 .header-mobile nav a {
@@ -69,7 +83,7 @@ body.menu-open::before {
     line-height: 1.5rem;
 }
 
-.header-mobile button {
+.header.mobile button {
      border: none;
     background: none;
 }
@@ -178,4 +192,34 @@ body.menu-open::before {
     font-size: 0.9375rem;
     line-height: 1.25rem;
     color: var(--Gunmetal);
+}
+
+@media(min-width: 1100px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primeira-seçao {
+        grid-column: 1/3;
+    }
+
+    header > button{
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        gap: 2.5rem;
+
+    }
+
+    header .desktop a{
+        font-size:0.9375rem ;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--Gunmetal);
+
+    }
 }
