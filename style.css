@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --almost-withw: #FFFDFA;
+    --Dark-blue:   #00001A;
+    --Gunmetal:  #5E607A;
+    --Vermillion:   #F15D51;
+    --Yellow:   #E9AA52;
+    --Silver:  #C5C6CE;
+}
+
+body{
+    padding: 1.75rem 1rem;
+    background-color: var(--almost-withw);
+}
+
+.header-mobile {
+    
+}
